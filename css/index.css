@@ -7,7 +7,7 @@ html,body,article{
     width: 100%;
 	overflow: hidden;
 	-webkit-text-size-adjust:100%!important;
-	background-color: #243579;
+	background-color: #e14328;
 }
 .none{
 	display: none;
@@ -61,6 +61,70 @@ img{
 }
 /* anime end */
 
+#indexBox{
+	background: url(../images/bg/bg.jpg?v=2) repeat;
+	background-size: 100%;
+}
+#indexBox .scrollBox{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+#indexBox .scrollBox .bg{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60rem;
+	background: url(../images/bg/bg2.jpg?v=2) repeat;
+	background-size: 100%;
+}
+#indexBox .scrollBox > img{
+	position: relative;
+	z-index: 9;
+	width: 100%;
+}
+#indexBox .scrollBox .introBox{
+	width: 7.25rem;
+	min-height: 11rem;
+	height: auto;
+	border: 1px solid #eaa69b;
+	margin: 0.4rem auto 0.6rem;
+	position: relative;
+	z-index: 9;
+}
+#indexBox .scrollBox .introBox img{
+	width: 100%;
+	transition: opacity 1.5s;
+	-webkit-transition: opacity 1.5s;
+}
+#indexBox .scrollBox .introBox img:last-child{
+	position: absolute;
+	left: 0;
+	height: 100%;
+}
+#indexBox .scrollBox .codeBox{
+	width: 1.5rem;
+	height: 1.5rem;
+	padding: 0.1rem;
+	border: 1px solid #ffffff;
+	margin: 0.2rem auto 0.15rem;
+	position: relative;
+	z-index: 9;
+}
+#indexBox .scrollBox .codeBox .code{
+	width: 100%;
+	height: 100%;
+	pointer-events: auto;
+}
+p.tips{
+	font-size: 0.16rem;
+	text-align: center;
+	color: #fff;
+	padding-bottom: 0.8rem;
+	position: relative;
+	z-index: 8;
+}
+/* indexBox end */
 /*---------------------------------------- 15:9 ----------------------*/
 
 /*---------------------------------------- 16:9 ----------------------*/

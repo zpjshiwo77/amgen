@@ -25,6 +25,25 @@ $(document).ready(function () {
 	function load_handler() {
 		var loader = new PxLoader();
 		loader.addImage('images/share.jpg');
+		loader.addImage('images/intro/11.jpg');
+		loader.addImage('images/intro/12.jpg');
+		loader.addImage('images/intro/21.jpg');
+		loader.addImage('images/intro/22.jpg');
+		loader.addImage('images/common/bgm_off.png');
+		loader.addImage('images/common/bgm_on.png');
+		loader.addImage('images/common/close.png');
+		loader.addImage('images/common/turn_lock.png');
+		loader.addImage('images/common/turn_no.png');
+		loader.addImage('images/common/turn_phone.png');
+		loader.addImage('images/common/turn_unlock.png');
+		loader.addImage('images/common/turn_yes.png');
+		loader.addImage('images/bg/bg.jpg');
+		loader.addImage('images/bg/bg2.jpg');
+		loader.addImage('images/bg/code.jpg');
+		loader.addImage('images/bg/info1.jpg');
+		loader.addImage('images/bg/info2.jpg');
+		loader.addImage('images/bg/info3.jpg');
+		loader.addImage('images/bg/title.jpg');
 
 		loader.addCompletionListener(function () {
 			icom.fadeIn(articleBox);
@@ -79,8 +98,20 @@ $(document).ready(function () {
 	function eventInit() {
 		$(".limitBtn").on("touchend", limitClick);
 
+		$(".introBox").on("click",changeImg);
 	}
-	
+
+	/**
+	 * 修改图片
+	 */
+	function changeImg(){
+		$(this).children().each(function(){
+			var img = $(this);
+			if(img.hasClass("hide")) img.removeClass("hide");
+			else img.addClass("hide");
+		})
+	}
+
 	/**
 	 * 限制点击
 	 */

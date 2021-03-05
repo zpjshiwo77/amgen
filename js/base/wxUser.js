@@ -126,7 +126,7 @@ function WxUser() {
             link: dominUrl,
             image: dominUrl + 'images/share.jpg?v=' + Math.random(),
             title: $('title').html(),
-            friend: $('title').html(),
+            friend: '强效 精准 惠民',
             timeline: $('title').html()
         }
     }
