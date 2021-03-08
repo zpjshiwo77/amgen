@@ -85,12 +85,12 @@ img{
 }
 #indexBox .scrollBox .introBox{
 	width: 7.25rem;
-	min-height: 11rem;
-	height: auto;
+	height: 12rem;
 	border: 1px solid #eaa69b;
 	margin: 0.4rem auto 0.6rem;
 	position: relative;
 	z-index: 9;
+	overflow: hidden;
 }
 #indexBox .scrollBox .introBox img{
 	width: 100%;
@@ -100,7 +100,7 @@ img{
 #indexBox .scrollBox .introBox img:last-child{
 	position: absolute;
 	left: 0;
-	height: 100%;
+	width: 100%;
 }
 #indexBox .scrollBox .codeBox{
 	width: 1.5rem;

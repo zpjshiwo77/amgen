@@ -43,6 +43,8 @@ $(document).ready(function () {
 		loader.addImage('images/bg/info1.jpg');
 		loader.addImage('images/bg/info2.jpg');
 		loader.addImage('images/bg/info3.jpg');
+		loader.addImage('images/bg/info4.jpg');
+		loader.addImage('images/bg/info5.jpg');
 		loader.addImage('images/bg/title.jpg');
 
 		loader.addCompletionListener(function () {
